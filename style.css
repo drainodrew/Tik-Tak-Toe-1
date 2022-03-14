@@ -1,0 +1,26 @@
+.game-board {
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  margin: 50px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  background: #fffff0;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset {
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: orange;
+  text-align: center;
+}
