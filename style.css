@@ -4,10 +4,21 @@
   grid-template-columns: 200px 200px 200px;
   margin: 50px;
 }
+/*header {
+  display: flex;
+  justify-content: center;
+  margin: botton 20px;
+  text-align: center;
+  margin: 0 auto;
+
+  margin: botton 20px;
+}*/
+
 body {
   display: flex;
   justify-content: center;
 }
+
 .box {
   background: #fffff0;
   border: 1px solid #555;
@@ -15,12 +26,24 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.updates {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  bottom: 20%;
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .reset {
   position: absolute;
   margin-top: 50px;
   left: 50%;
-  bottom: 15%;
+  bottom: 10%;
+  width: 100px;
+  height: 35px;
   transform: translate(-50%, -50%);
   background-color: orange;
   text-align: center;
