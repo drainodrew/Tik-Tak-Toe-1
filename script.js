@@ -21,8 +21,13 @@ for (let i = 0; i < board.length; i++) {
     e.preventDefault;
     if (j == 0 && board[i].style.background !== "blue" && board[i].style.background !== "red") {
       board[i].style.background = "blue"
-      j += 1
-      k += 1
+      j++
+      k++
+    }
+    if (j == 1 && board[i].style.background !== "blue" && board[i].style.background !== "red") {
+      board[i].style.background = "red"
+      j -= 1
+      k++
     }
     // return e.target.style.background = "blue", e.target.style.background = "red";)
   })
