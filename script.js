@@ -13,7 +13,9 @@ for (let i = 0; i < board.length; i++) {
       board[i].style.background = "blue"
       j++
       k++
-   
+      if (j == 9 || k == 9) {
+     updates.innerHTML = 'tie?'
+   }
     if (board[0].style.background === "blue" && board[1].style.background === "blue" && board[2].style.background === "blue") {
       updates.innerHTML = `"blue wins, red you are worthless and nobody loves you`
     }
@@ -41,8 +43,8 @@ for (let i = 0; i < board.length; i++) {
     if (board[2].style.background === "blue" && board[5].style.background === "blue" && board[8].style.background === "blue") {
       updates.innerHTML = "blue wins, red you are worthless and nobody loves you"
     }
-    else {
-      updates.innerHTML = "it's a tie 🥱"
+      if (board[2].style.background === "blue" && board[4].style.background === "blue" && board[6].style.background === "blue") {
+        updates.innerHTML = "blue wins, red you are worthless and nobody loves you"
       }
     return
   }
@@ -51,7 +53,7 @@ for (let i = 0; i < board.length; i++) {
       board[i].style.background = "red"
       j--
       k++
-       
+  
     if (board[0].style.background === "red" && board[1].style.background === "red" && board[2].style.background === "red") {
       updates.innerHTML = `"red wins, blue you are worthless and nobody loves you`
     }
@@ -79,6 +81,9 @@ for (let i = 0; i < board.length; i++) {
     if (board[2].style.background === "red" && board[5].style.background === "red" && board[8].style.background === "red") {
       updates.innerHTML = "red wins. blue, i wish i could say this wasn't a reflection on your character, but that'd be a lie. you were born a loser and will always lose."
     }
+      if (board[2].style.background === "red" && board[4].style.background === "red" && board[6].style.background === "red") {
+        updates.innerHTML = "blue wins, red you are worthless and nobody loves you"
+      }
   }
   })
 }
